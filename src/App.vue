@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1>My Notes App 📝</h1>
+    <note-form />
+    <note-list />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NoteForm from './components/NoteForm.vue';
+import NoteList from './components/NoteList.vue';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    NoteForm,
+    NoteList,
+  },
+};
 </script>
 
 <style>
@@ -21,6 +28,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 2rem;
 }
 </style>
