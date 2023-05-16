@@ -25,15 +25,12 @@ export default {
     };
   },
   created() {
-    // Fetch the note details from the API when the component is created
     this.fetchNote();
   },
   methods: {
     fetchNote() {
-      // Use an HTTP library (e.g., Axios) to make a GET request to the API endpoint with the note ID and update the note object
     },
     editNote() {
-      // Redirect to the note edit page or emit an event to notify the parent component about the request to edit the note
     },
   },
 };
